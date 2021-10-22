@@ -19,12 +19,12 @@ describe("Show User Profile - Test Integration", () => {
   });
 
   const user = {
-    name: "jeandson",
-    email: "jeandsonbraz@gmail.com",
+    name: "admin",
+    email: "admin@email.com",
     password: "123456"
   }
 
-  it("Should be able a user valid - Test Integration", async () => {
+  it("Should be able a user valid", async () => {
     await request(app).post("/api/v1/users").send(user);
 
     const token = await request(app)
@@ -44,7 +44,7 @@ describe("Show User Profile - Test Integration", () => {
     expect(result.body.email).toEqual(user.email);
   });
 
-  it("Should be able invalid user token - Test Integration", async () => {
+  it("Should be able invalid user token", async () => {
     const result = await request(app).get("/api/v1/profile").set({
       Authorization: `Bearer InvalidToken`
     });

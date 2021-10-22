@@ -19,7 +19,9 @@ Você pode inclusive fazer as alterações no mesmo repositório submetido no de
 [Link do projeto sem as implementações][linkProject]
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Test" title="#Test" src="" width="400px">
+  <img alt="Test" title="#Test" src="https://raw.githubusercontent.com/jeandsontb/DesafioIginite-RocketSeat-Tests-Integracao/main/screen/integra%C3%A7%C3%A3otests.png" width="400px">
+
+  <img alt="Test" title="#Test" src="https://raw.githubusercontent.com/jeandsontb/DesafioIginite-RocketSeat-Tests-Integracao/main/screen/integra%C3%A7%C3%A3otest2.png" width="400px">
 </p>
 
 ## 🛠 Tecnologias
@@ -31,6 +33,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [UUID][uuid]
 - [JEST][jest]
 - [Tsyring][tsyring]
+- [Supertest][supertest]
 - [Vscode][vscode]
 
 ## 💡 Como executar o projeto
@@ -98,4 +101,5 @@ A rota recebe um token JWT pelo header e o id de uma operação registrada (saqu
 [Vscode]: https://code.visualstudio.com/
 [jest]: https://jestjs.io/pt-BR/docs/getting-started
 [tsyring]: https://www.npmjs.com/package/tsyringe
+[supertest]: https://www.npmjs.com/package/supertest
 [linkProject]: https://github.com/rocketseat-education/ignite-template-tests-challenge

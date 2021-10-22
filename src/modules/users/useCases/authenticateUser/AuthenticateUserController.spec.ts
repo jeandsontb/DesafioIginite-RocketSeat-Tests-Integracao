@@ -5,7 +5,7 @@ import createConnection from '../../../../database';
 
 let connection: Connection;
 
-describe("Authenticate User", () => {
+describe("Authenticate User - Test Integration", () => {
   beforeAll(async () => {
     connection = await createConnection();
     await connection.runMigrations();
@@ -16,7 +16,7 @@ describe("Authenticate User", () => {
     await connection.close();
   });
 
-  it("Should be able authenticate a user", async () => {
+  it("Should be able authenticate a user - Test Integration", async () => {
     const user = {
       name: "testuser",
       email: "testuser@email.com",

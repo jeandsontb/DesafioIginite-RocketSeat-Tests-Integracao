@@ -6,7 +6,7 @@ import createConnection from "../../../../database";
 
 let connection: Connection;
 
-describe("Create User", () => {
+describe("Create User - Test Integration", () => {
   beforeAll(async () => {
     connection = await createConnection();
     await connection.runMigrations();
@@ -17,7 +17,7 @@ describe("Create User", () => {
     await connection.close();
   });
 
-  it("Shoud a be able create user controller", async () => {
+  it("Shoud a be able create user - Test Integration", async () => {
     const result = await request(app).post("/api/v1/users").send({
       name: "usertest",
       email: "usertest@email.com",

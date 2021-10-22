@@ -1,9 +1,9 @@
 <h1 align="center">
-  TESTES UNITÁRIOS - IGNITE ROCKETSEAT
+  TESTES DE INTEGRAÇÃO - IGNITE ROCKETSEAT
 </h1>
 
 <h4 align="center">
-	Desafio para implementar testes unitários em uma aplicação do curso Ignite Node.JS da RocketSeat
+	Desafio para implementar testes de integração em uma aplicação do curso Ignite Node.JS da RocketSeat
 </h4>
 
 <p align="center">
@@ -12,14 +12,14 @@
 
 # 💻 Sobre o desafio
 
-Nesse desafio, você deverá criar testes unitários para uma aplicação já pronta usando tudo que aprendeu até agora sobre testes.
+Nesse desafio, você deverá criar testes de integração para a mesma aplicação usada no [desafio anterior](https://www.notion.so/Desafio-01-Testes-unit-rios-0321db2af07e4b48a85a1e4e360fcd11).
 
-Para que você possa focar somente na parte de testes unitários sem precisar estudar muito a aplicação do zero, o template foi desenvolvido com base em uma aplicação já conhecida: **FinAPI**. A API construída no primeiro módulo da trilha.
+Você pode inclusive fazer as alterações no mesmo repositório submetido no desafio de testes unitários e submetê-lo na plataforma.
 
 [Link do projeto sem as implementações][linkProject]
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Test" title="#Test" src="https://raw.githubusercontent.com/jeandsontb/DesafioIginite-RocketSeat-04-Tests-Unitarios/main/screen/testUnits.png" width="400px">
+  <img alt="Test" title="#Test" src="" width="400px">
 </p>
 
 ## 🛠 Tecnologias
@@ -44,9 +44,12 @@ TESTES:
   Para rodar os testes execute o comando "yarn test" ou "npm run test"
 
 ```
-## Especificação para realizar os testes da aplicação
 
-Rodar o comando => yarn test
+## Comando para criar o container docker com os dados para o banco da aplicação
+
+```bash
+docker run --name ignite-challenge-database-queries -e POSTGRES_DB=queries_challenge -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+```
 
 ## Rotas da aplicação
 

@@ -6,7 +6,7 @@ import createConnection from '../../../../database';
 
 let connection: Connection;
 
-describe("Show User Profile", () => {
+describe("Show User Profile - Test Integration", () => {
 
   beforeAll(async () => {
     connection = await createConnection();
@@ -24,7 +24,7 @@ describe("Show User Profile", () => {
     password: "123456"
   }
 
-  it("Should be able a user valid", async () => {
+  it("Should be able a user valid - Test Integration", async () => {
     await request(app).post("/api/v1/users").send(user);
 
     const token = await request(app)
@@ -44,7 +44,7 @@ describe("Show User Profile", () => {
     expect(result.body.email).toEqual(user.email);
   });
 
-  it("Should be able invalid user token", async () => {
+  it("Should be able invalid user token - Test Integration", async () => {
     const result = await request(app).get("/api/v1/profile").set({
       Authorization: `Bearer InvalidToken`
     });

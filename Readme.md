@@ -43,6 +43,8 @@ TESTES:
 
   Para rodar os testes execute o comando "yarn test" ou "npm run test"
 
+  Para rodar os testes de integração um por vez execute esse comando "yarn test --detectOpenHandles"
+
 ```
 
 ## Comando para criar o container docker com os dados para o banco da aplicação
